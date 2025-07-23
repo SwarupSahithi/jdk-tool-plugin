@@ -20,7 +20,7 @@ FROM jenkins/jenkins:lts-jdk17
 COPY --from=build /app/target/*.hpi /usr/share/jenkins/ref/plugins/
 
 # Preinstall plugins (optional)
-RUN jenkins-plugin-cli --plugins configuration-as-code:1700.vf343cd8990de
+RUN jenkins-plugin-cli --plugins configuration-as-code:1775.v810dc950b_514
 
 # Expose Jenkins port
 EXPOSE 8080
